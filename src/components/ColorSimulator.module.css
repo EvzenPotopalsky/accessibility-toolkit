@@ -1,0 +1,84 @@
+.views {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 1.5rem;
+}
+
+.view {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--foreground);
+  border-radius: 0.375rem;
+}
+
+.view h2 {
+  margin-top: 0;
+  font-size: 1.125rem;
+}
+
+.palette {
+  display: grid;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.swatch {
+  height: 4rem;
+  border: 1px solid var(--foreground);
+  border-radius: 0.25rem;
+}
+
+.colorLabel {
+  margin: 0.5rem 0 0;
+  overflow-wrap: anywhere;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.field {
+  display: grid;
+  align-content: start;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.field input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid currentColor;
+  border-radius: 0.375rem;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.field p {
+  margin: 0;
+}
+
+.field input[type="color"] {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.button {
+  padding: 0.75rem 1rem;
+  border: 1px solid currentColor;
+  border-radius: 0.375rem;
+  background: var(--background);
+  color: var(--foreground);
+  font: inherit;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

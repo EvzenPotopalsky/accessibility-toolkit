@@ -1,0 +1,83 @@
+.generator {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.field input[type="text"],
+.field select {
+  width: 100%;
+  max-width: 24rem;
+  padding: 0.75rem;
+  border: 1px solid currentColor;
+  border-radius: 0.375rem;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.field input[type="color"] {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.button {
+  justify-self: start;
+  padding: 0.75rem 1rem;
+  border: 1px solid currentColor;
+  border-radius: 0.375rem;
+  background: var(--background);
+  color: var(--foreground);
+  font: inherit;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.palette {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.shade {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--foreground);
+  border-radius: 0.375rem;
+}
+
+.shade h3 {
+  margin-top: 0;
+}
+
+.swatch {
+  height: 4rem;
+  border: 1px solid var(--foreground);
+  border-radius: 0.25rem;
+}
+
+.pairings {
+  display: grid;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+  overflow-wrap: anywhere;
+}
+
+.pairings a {
+  display: block;
+  margin-top: 0.25rem;
+}
