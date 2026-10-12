@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About and Accessibility",
   description:
-    "Learn how the colour tools work, their limitations, and the site's accessibility approach.",
+    "Learn how the colour tools work, their limitations and the site's accessibility approach.",
 };
 
 export default function AboutPage() {
@@ -13,7 +13,7 @@ export default function AboutPage() {
 
       <p>
         Accessibility Toolkit helps you explore colour contrast and compare
-        colour choices. Colour is one part of accessibility; these tools cannot
+        colour choices. Colour is only one part of accessibility, but these tools cannot
         establish whether an entire website meets WCAG.
       </p>
 
@@ -29,9 +29,9 @@ export default function AboutPage() {
           rounded to two decimal places.
         </p>
         <p>
-          Large text means at least 24 CSS pixels, or approximately 18.67 CSS
+          Large text means at least 24 CSS pixels or approximately 18.67 CSS
           pixels when bold. The non-text result checks the 3:1 threshold for the
-          selected pair; evaluating a component also requires considering its
+          selected pair and evaluating a component also requires considering its
           relevant adjacent colours and visual information.
         </p>
       </section>
@@ -40,10 +40,10 @@ export default function AboutPage() {
         <h2>Colour vision simulator</h2>
         <p>
           The simulator applies transformation matrices from the Machado,
-          Oliveira, and Fernandes model to linear RGB values.
+          Oliveira and Fernandes model to linear RGB values.
         </p>
         <p>
-          These views are approximations, and individual colour perception
+          These views are approximations and individual colour perception
           varies. The blue-yellow view uses the strongest tritanomaly setting as
           an approximation rather than an exact model of tritanopia. Simulated
           colours outside the sRGB range are clipped to displayable values.
@@ -63,7 +63,7 @@ export default function AboutPage() {
         </p>
         <p>
           Selecting a target changes the contrast checks, not the generated
-          shades. The palette is not guaranteed to pass, and the shades are not
+          shades. The palette is not guaranteed to pass and the shades are not
           perceptually evenly spaced.
         </p>
       </section>
@@ -72,12 +72,12 @@ export default function AboutPage() {
         <h2>Accessibility and testing</h2>
         <p>
           The site includes labelled controls, visible keyboard focus, a skip
-          link, text-based results, and support for system light and dark
+          link, text-based results and support for system light and dark
           preferences.
         </p>
         <p>
           Automated tests cover colour calculations, selected interface
-          behaviours, and axe accessibility checks for the three tool
+          behaviours and axe accessibility checks for the three tool
           components. Colour contrast is checked separately in the browser
           because the test environment does not support that axe rule.
         </p>
